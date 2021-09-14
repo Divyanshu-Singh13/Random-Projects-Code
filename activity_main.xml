@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_img">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bungee"
+        android:text="CREATE TASKS"
+        android:textColor="@color/editText2"
+        android:textSize="40sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task Title"
+        android:layout_marginTop="105dp"
+        android:textColorHint="@color/editText1"
+        android:background="@color/editText2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/taskname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:layout_marginTop="190dp"
+        android:textColorHint="@color/editText1"
+        android:background="@color/editText2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/taskdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task ID"
+        android:layout_marginTop="270dp"
+        android:textColorHint="@color/editText1"
+        android:background="@color/editText2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/taskid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_shape"
+        android:text="ADD TASK"
+        android:textColor="@color/editText1"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_delete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_shape"
+        android:text="DELETE TASK"
+        android:textColor="@color/editText1"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_upgrade"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_shape"
+        android:text="UPDATE TASK"
+        android:textColor="@color/editText1"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_view"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_shape"
+        android:text="VIEW TASK"
+        android:textColor="@color/editText1"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_shape"
+        android:text="LOGOUT"
+        android:textColor="@color/editText1"
+        android:textSize="18sp"
+        android:onClick="btn_logout"/>
+</RelativeLayout>
